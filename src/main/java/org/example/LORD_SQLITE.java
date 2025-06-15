@@ -3,9 +3,8 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
-public class LORD_SQLLITE {
+public class LORD_SQLITE {
 
     //CSVファイルのパス
     private static final String CSV_FILE_PATH = "src\\main\\resources\\アイテム数値.csv";

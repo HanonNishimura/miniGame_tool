@@ -1,11 +1,8 @@
 package org.example;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 import java.util.Random;
-
-import static org.example.SKILL.getSkillInfoById;
 
 public class Main {
 
@@ -43,7 +40,7 @@ public class Main {
         String item = scanner.nextLine();
 
         // アイテムデータを取得
-        String[] itemData = LORD_SQLLITE.getItemByNameId(item);
+        String[] itemData = LORD_SQLITE.getItemByNameId(item);
         if (itemData != null) {
             System.out.println("取得したデータ:");
             System.out.println(Arrays.toString(itemData));
@@ -55,7 +52,7 @@ public class Main {
         String character = scanner.nextLine();
 
         // アイテムデータを取得
-        String[] characterData = LORD_SQLLITE.getItemByCharacterNameId(character);
+        String[] characterData = LORD_SQLITE.getItemByCharacterNameId(character);
         if (itemData != null) {
             System.out.println("取得したデータ:");
             System.out.println(Arrays.toString(characterData));
